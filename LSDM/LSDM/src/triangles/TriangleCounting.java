@@ -59,7 +59,9 @@ public class TriangleCounting {
 					if (!(v1.id < v2.id) || !(v1.id < v3.id) || !(v2.id < v3.id))
 					{
 						continue;
-					} else if(v2.out.containsKey(v3.id)) {// triangle found
+					} else if(v1.out.containsKey(v2.id) &&
+							v2.out.containsKey(v3.id) &&
+							v3.out.containsKey(v1.id)) {// triangle found
 						ret++;
 						v1.triangles++;
 						v2.triangles++;
