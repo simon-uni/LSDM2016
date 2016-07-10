@@ -13,3 +13,5 @@ Clone the repository and navigate in the LSDM folder to find the "master.sh" scr
 2.3 "counting" counts the triangles of the graph. Afterwards you can query the vertices and find out what the cluster coefficient of a specific vertex is. Type in for example "1" and press enter.
 
 Give it a try!
+
+Implemented using Java 1.8.
